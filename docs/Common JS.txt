@@ -1,0 +1,23 @@
+// after clone from Github
+npm install
+sudo npm install -g --force nodemon
+
+// frontend
+npm install react-router-dom
+npm install axios
+
+// backend
+node init -y
+node install express cors mysql nodemon
+npm i bcryptjs
+
+// docker
+npm run build // build frontend
+docker run --name some-mysql -v /my/own/datadir:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+docker run --name mysql -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD -d mysql:latest
+
+// init
+npx create-react-app .
+npm start
+node -v
+npx -v
