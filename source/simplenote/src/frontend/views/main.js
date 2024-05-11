@@ -41,11 +41,26 @@ function Main() {
         }
         SetItems(newItems);
     }
-        
+
+    const addItem = (Item) => {
+        SetItems((prev) => {
+            return [
+                ...prev,
+                Item
+            ]
+        })
+    }
+
+    const handleRemove = (id) => {
+        SetItems((prev) => {
+            return prev.filter(ele => (ele.id != id));
+        })
+    }
+
     return (
         <div class="main">
-            <Navbar Suff={Suff}/>
-            <Item Items={Items}/>
+            <Navbar Suff={Suff} addItem={addItem}/>
+            <Item Items={Items} handleRemove={handleRemove}/>
         </div>
     )
 }

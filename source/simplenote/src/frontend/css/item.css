@@ -27,5 +27,9 @@ p {
   font-weight: 600;
   background-color: rgb(228, 162, 159);
   border-radius: 2rem;
-  height: 150px;
+  height: 80px;
+}
+
+.item-btn {
+  margin: 2rem;
 }
