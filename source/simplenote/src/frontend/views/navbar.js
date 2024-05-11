@@ -1,12 +1,10 @@
 import "../css/navbar.css"
-import Button from "./button";
+import Suffle from "./suffle";
 
-function Navbar() {
+function Navbar({ Suff }) {
     return (
         <nav>
-            <Button content={"Add"}/>
-            <Button content={"Suffle"}/>
-            <Button content={"Newest"}/>
+            <Suffle Suff ={ Suff }/>
         </nav>
     )
 }
