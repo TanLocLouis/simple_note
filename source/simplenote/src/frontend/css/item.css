@@ -3,9 +3,9 @@
     max-width: 1000px;
     
     margin: 3rem auto;
-    width: 40%;
+    width: 300px;
     height: 300px;
-    border-radius: 3rem;
+    border-radius: 0.5rem 2rem 2rem 2rem;
 }
 
 .main-section:hover {
@@ -23,7 +23,7 @@ h1 {
 }
 
 p {
-  padding: 2rem;
+  padding: 1rem;
   font-weight: 600;
   background-color: rgb(228, 162, 159);
   border-radius: 2rem;
@@ -31,5 +31,6 @@ p {
 }
 
 .item-btn {
-  margin: 2rem;
+  margin: 1rem;
+  background-color: orange;
 }

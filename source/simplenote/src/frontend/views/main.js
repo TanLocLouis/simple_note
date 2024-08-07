@@ -1,9 +1,13 @@
 import "../css/main.css"
 import Item from "./item";
 import Navbar from "./navbar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Main() {
+    useEffect(() => {
+        document.title = "Simple note";
+    })
+
     const [Items, SetItems] = useState([
         {
             id: 1,
@@ -59,8 +63,12 @@ function Main() {
 
     return (
         <div class="main">
-            <Navbar Suff={Suff} addItem={addItem}/>
-            <Item Items={Items} handleRemove={handleRemove}/>
+            <div>
+                <Navbar Suff={Suff} addItem={addItem}/>
+            </div>
+            <div>
+                <Item Items={Items} handleRemove={handleRemove}/>
+            </div>
         </div>
     )
 }

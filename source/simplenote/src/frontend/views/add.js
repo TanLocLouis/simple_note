@@ -32,6 +32,7 @@ function Add({ addItem }) {
 
     return (
         <div class="add-main">
+            <h1>ADD</h1>
             <input class="add-input" onChange={setTitle} placeholder="Title..."></input>
             <textarea class="add-placeholder" onChange={setContent} placeholder="Write your note here..."></textarea>
             <button onClick={() => addItem(Item)} class="btn">Add</button>

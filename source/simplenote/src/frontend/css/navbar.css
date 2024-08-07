@@ -3,12 +3,12 @@ nav {
     top: 50px;
     position: fixed;
     background-color: rgb(182, 169, 169);
-    width: 20%;
-    height: 400px;
+    width: 200px;
+    max-height: 1000px;
     border-radius: 3rem;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem
+    padding: 2rem;
 }
